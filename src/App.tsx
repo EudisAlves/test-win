@@ -1,6 +1,7 @@
-import { createTheme, ThemeProvider } from "@material-ui/core"
+import { createTheme, ThemeProvider } from "@material-ui/core/styles"
 import CssBaseline from "@material-ui/core/CssBaseline";
-import HeroSection from "./components/Header";
+import Header from "./components/Header";
+
 
 
 
@@ -14,7 +15,8 @@ export default function indexPages() {
     return (
         <ThemeProvider theme={darkTheme}>
             <CssBaseline />
-            <HeroSection />
+            <Header />
+            <h1>olá</h1>
         </ThemeProvider>
     );
 }
